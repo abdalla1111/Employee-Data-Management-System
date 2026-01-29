@@ -1,23 +1,20 @@
 # Employee Data Management System
 
-A Python CLI application to manage employee records with CSV persistence, supporting add, update, delete, search, and list operations.
+A Python command-line application (CLI) for managing employee records with CSV file persistence.
 
 ## Features
-- Add employee records with ID, Name, Position, Salary, and Email
-- View all employees in a readable format
+- Add employee records (ID, Name, Position, Salary, Email)
+- View all employees in a readable table format
 - Update employee details by ID
 - Delete employee records by ID
 - Search for an employee by ID
-- Data is stored in `employees.csv` for persistence
+- Persistent storage using `employees.csv`
+- Input validation (numeric ID & salary, alphabetic names, email format)
 
-## Technical Requirements
-- Implemented using a single class `EmployeeManager`
-- Uses Python dictionaries to store data in memory
-- Reads/writes employee data to a CSV file
-- Handles invalid input and basic validation (e.g., numeric salary)
+## Technical Details
+- Implemented using a single class: `EmployeeManager`
+- Uses Python dictionaries for in-memory storage
+- Uses the built-in `csv` module for file handling
+- Menu-driven CLI interface
 
-## How to Use
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/employee-data-management.git
-cd employee-data-management
+## Project Structure
